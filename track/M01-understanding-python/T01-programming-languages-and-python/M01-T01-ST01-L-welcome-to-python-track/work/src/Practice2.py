@@ -1,3 +1,5 @@
+# List slicing with negative and positive indices
+
 a = [10, 20, 30, 40, 50, 60, 70, 80]
 print(a[-2:-7:-2])  # [70, 50, 30]
 
@@ -54,3 +56,41 @@ print(a[5:-1:-1])  # []
 
 a = [10, 20, 30, 40, 50, 60]
 print(a[-2:0:2])  # []
+
+# Day-2 Practice same Topic
+
+# Q-1. Negative Indexing
+t = (10, 20, 30, 40, 50, 60, 70, 80)
+print(t[-6:-1])
+print(t[-1:-6:-2])
+
+# Q-2. Negative steps
+t = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+print(t[7:2:-1])
+print(t[8:1:-2])
+
+# Multiple Negative slicing
+t = (10, 20, 30, 40, 50, 60, 70, 80, 90)
+print(t[-2:-8:-2])
+print(t[-8:-2:2])
+
+# Reverse slicing
+t = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+print(t[::-2])
+print(t[8::-2])
+print(t[-2::-3])
+
+# Empty tuple slicing
+t = (10, 20, 30, 40, 50, 60, 70)
+print(t[2:2])
+print(t[4:1])
+print(t[-1:2])
+print(t[1:4:-1])
+
+# Multiple slicing Operation
+t = (1, 2, 3, 4, 5, 6, 7, 8)
+a = t[::-1]
+b = t[2:8:2]
+print(a)
+print(b)
+
